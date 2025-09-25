@@ -55,6 +55,8 @@
 
     .pix {
         background-color: #c24818c0;
+        background-size: cover;
+        
         border: 1px solid #9c350c91;
         box-shadow: 5px 5px 4px #77270881;
         border-radius: 24px;
