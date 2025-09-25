@@ -1,0 +1,370 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* --------- RESPONSIVIDADE --------- */
+
+/* ====================== CELULARES ====================== */
+/* ====================== CELULARES ====================== */
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        max-width: 1200px;
+        /* ocupa toda a largura da tela */
+        min-height: 100vh;
+        /* altura mínima da tela */
+        gap: 15px;
+        padding: 16px;
+        align-items: stretch;
+        background-image: none;
+        /* remove o gradiente */
+        border-radius: 24px;
+        box-shadow: 5px 5px 10px #77270881;
+        box-sizing: border-box;
+    }
+
+    .infos,
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* todos os elementos em coluna */
+        width: 100%;
+        max-width: 100%;
+        gap: 12px;
+        box-sizing: border-box;
+    }
+
+    .infos p {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 4px 0;
+        word-wrap: break-word;
+    }
+
+    .formulario textarea {
+        width: 100%;
+        box-sizing: border-box;
+        resize: vertical;
+        align-items: flex-start;
+        /* permite apenas ajuste vertical */
+        max-width: 50%;
+    }
+
+    .pix {
+        background-color: #c24818c0;
+        border: 1px solid #9c350c91;
+        box-shadow: 5px 5px 4px #77270881;
+        border-radius: 24px;
+        padding: 16px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        transition: transform 0.6s ease;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        text-align: center;
+    }
+}
+
+/* ====================== TABLETS ====================== */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 12px;
+        height: auto;
+        align-items: center;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .infos,
+    .formulario {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pix {
+        width: 100%;
+    }
+}
+
+/* ====================== DESKTOPS PEQUENOS ====================== */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 80%;
+        height: 500px;
+        gap: 10px;
+    }
+
+    .infos,
+    .formulario {
+        max-width: 40%;
+    }
+
+    .infos p img {
+        width: 30px;
+    }
+
+    form {
+        gap: 2em;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header h1,
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* ====================== DESKTOPS GRANDES ====================== */
+@media screen and (min-width: 1441px) {
+    .container {
+        max-width: 60%;
+    }
+}
+
+* {
+    margin: auto;
+    padding: 10px;
+
+}
+
+body {
+    background-color: #2F0B48;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+
+}
+
+
+.container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #47106ed5, #F23005);
+    border-radius: 24px;
+    height: auto;
+    box-shadow: 5px 5px 10px #77270881;
+
+}
+
+.infos,
+.formulario {
+    flex: 1 1 0;
+    /* cada section cresce proporcionalmente */
+    max-width: 50%;
+    /* não ultrapassa metade do container */
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+
+}
+
+header h1 {
+    color: #c44412;
+    font-style: italic;
+    font-weight: 500;
+}
+
+header h2 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    color: #d84c15b2;
+}
+
+header h1,
+h2 {
+    text-align: center;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.3em;
+
+
+}
+
+.formulario {
+    display: flex;
+
+}
+
+.formulario input {
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid #9c350c;
+    box-shadow: 5px 5px 8px #77270881;
+}
+
+#caixacomprov {
+    border: none;
+}
+
+.formulario textarea {
+    background-color: transparent;
+    border-radius: 16px;
+    border: 2px solid #9c350c91;
+    box-shadow: 5px 5px 8px #77270881;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 600;
+    color: #e0c1f7;
+}
+
+
+.infos {
+    max-width: 45%;
+    font-size: 1.5em;
+}
+
+.infos h3 {
+    font-style: italic;
+    color: #9c350c;
+}
+
+.valor {
+    font-weight: 400;
+}
+
+.pix {
+    font-weight: 500;
+}
+
+.infos p img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 2px;
+
+}
+
+.infos>* {
+    margin-bottom: 24px;
+}
+
+.formulario {
+    max-width: 45%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.pix {
+    background-color: #c24818c0;
+    border: 1px solid #9c350c91;
+    box-shadow: 5px 5px 4px #77270881;
+    border-radius: 24px;
+    transition: transform 0.6s ease;
+}
+
+.pix:hover {
+    transform: scale(1.14);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    color: #d34d09c9;
+    font-size: 16px;
+    gap: 1px;
+    font-weight: 400;
+
+}
+
+.footer a {
+    display: inline-block;
+    background-color: #9c350cb9;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.733);
+    border-radius: 12px;
+    padding: 8px;
+    opacity: .8;
+    transition: transform 0.6s ease;
+    margin-left: 8px;
+}
+
+.footer a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.footer p img {
+    vertical-align: middle;
+    margin-left: 1px;
+}
+
+.labelwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.labelwrapper button {
+    padding: 4px 32px 4px 32px;
+    background-color: #9c350cb9;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    opacity: .8;
+    color: rgba(255, 255, 255, 0.733);
+
+}
+
+.labelwrapper button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+}
